@@ -5,106 +5,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <title>Web Studio</title>
 </head>
-
-<body>
-    <!--шапка_сайту-->
-    <header>
-        <nav>
-            <a href="./index.html" lang="en">WebStudio</a>
-            <ul>
-                <li><a href="./index.html">Студия</a></li>
-                <li><a href="/portfolio.html">Портфолио</a></li>
-                <li><a href="/contacts">Контакты</a></li>
-            </ul>
-        </nav>
-        <!--контакти-->
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-        </ul>
-    </header>
-    <!--унікальний контент-->
-    <main>
-        <!--Фільтр-->
-        <section>
-            <ul>
-                <li><a href="">Все</a></li>
-                <li><a href="">Веб-сайты</a></li>
-                <li><a href="">Приложения</a></li>
-                <li><a href="">Дизайн</a></li>
-                <li><a href="">Маркетинг</a></li>
-            </ul>
-        </section>
-        <!--Проекти-->
-        <section>
-            <ul>
-                <li>
-                    <img width="370" height="294" src="/images/project_1.jpg" alt="Технокряк">
-                    <h3>Технокряк</h3>
-                    <p>Веб-сайт</p>
+    <body>
+        <!--шапка_сайту-->
+        <header class="header">
+            <nav class="header-nav">
+                <a class="header-logo link" href="./index.html" lang="en">
+                    <span class="header-logo-color-Web">Web</span>
+                    <span class="header-logo-color-studio">Studio</span>
+                </a>
+                <ul class="header-list list">
+                    <li class="header-item">
+                        <a class="link header-link" href="./index.html">Студия</a></li>
+                    <li class="header-item">
+                        <a class="link header-link" href="/portfolio.html">Портфолио</a></li>
+                    <li class="header-item">
+                        <a class="link header-link" href="/contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <!--контакти-->
+            <ul class="list header-contacts-list">
+                <li class="header-contacts-item">
+                    <a class="link header-contacts-link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li>
-                    <img width="370" height="294" src="/images/project_2.jpg" alt="Постер New Orlean vs Golden Star">
-                    <h3>Постер New Orlean vs Golden Star</h3>
-                    <p>Дизайн</p>
-                </li>
-                <li>
-                    <img width="370" height="294" src="/images/project_3.jpg" alt="Ресторан Seafood">
-                    <h3>Ресторан Seafood</h3>
-                    <p>Приложение</p>
-                </li>
-                <li>
-                    <img width="370" height="294" src="/images/project_4.jpg" alt="Проект Prime">
-                    <h3>Проект Prime</h3>
-                    <p>Маркетинг</p>
-                </li>
-                <li>
-                    <img width="370" height="294" src="/images/project_5.jpg" alt="Проект Boxes">
-                    <h3>Проект Boxes</h3>
-                    <p>Приложение</p>
-                </li>
-                <li>
-                    <img width="370" height="294" src="/images/project_6.jpg" alt="Inspiration has no Borders">
-                    <h3>Inspiration has no Borders</h3>
-                    <p>Веб-сайт</p>
-                </li>
-                <li>
-                    <img width="370" height="294" src="/images/project_7.jpg" alt="Издание Limited Edition">
-                    <h3>Издание Limited Edition</h3>
-                    <p>Дизайн</p>
-                </li>
-                <li>
-                    <img width="370" height="294" src="/images/project_8.jpg" alt="Проект LAB">
-                    <h3>Проект LAB</h3>
-                    <p>Маркетинг</p>
-                </li>
-                <li>
-                    <img width="370" height="294" src="/images/project_9.jpg" alt="Growing Business">
-                    <h3>Growing Business</h3>
-                    <p>Приложение</p>
+                <li class="header-contacts-item">
+                    <a class="link headre-contacts-link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
-        </section>
-    </main>
-    <!--подвал-->
-    <footer>
-        <a href="" lang="en">WebStudio</a>
-        <address>
-            <ul>
-                <li><a href="https://goo.gl/maps/LukTUDe9WhDewyrs6" target="_blank" rel="noopener norefererr">г. Киев,
-                        пр-т Леси Украинки,26</a>
-                </li>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </address>
-    </footer>
-</body>
+        </header>
+        <!--унікальний контент-->
+        <main class="main">
+            <!--Фільтр-->
+            <section class="main-section">
+                <ul class="list main-list">
+                    <li><a class="link main-link" href="">Все</a></li>
+                    <li><a class="link main-link" href="">Веб-сайты</a></li>
+                    <li><a class="link main-link" href="">Приложения</a></li>
+                    <li><a class="link main-link" href="">Дизайн</a></li>
+                    <li><a class="link main-link" href="">Маркетинг</a></li>
+                </ul>
+            </section>
+            <!--Проекти-->
+            <section class="projects">
+                <ul class="list projects-list">
+                    <li class="projects-item">
+                        <img width="370" height="294" src="/images/project_1.jpg" alt="Технокряк">
+                        <h3 class="projects-title">Технокряк</h3>
+                        <p class="projects-after-title">Веб-сайт</p>
+                    </li>
+                    <li class="projects-item">
+                        <img width="370" height="294" src="/images/project_2.jpg" alt="Постер New Orlean vs Golden Star">
+                        <h3 class="projects-title">Постер New Orlean vs Golden Star</h3>
+                        <p class="projectsaftere-title">Дизайн</p>
+                    </li>
+                    <li class="projects-item">
+                        <img width="370" height="294" src="/images/project_3.jpg" alt="Ресторан Seafood">
+                        <h3 class="projects-title">Ресторан Seafood</h3>
+                        <p class="projects-after-title">Приложение</p>
+                    </li>
+                    <li class="projects-item">
+                        <img width="370" height="294" src="/images/project_4.jpg" alt="Проект Prime">
+                        <h3 class="projects-title">Проект Prime</h3>
+                        <p class="projects-after-title">Маркетинг</p>
+                    </li>
+                    <li class="projects-item">
+                        <img width="370" height="294" src="/images/project_5.jpg" alt="Проект Boxes">
+                        <h3 class="projects-title">Проект Boxes</h3>
+                        <p class="projects-after-title">Приложение</p>
+                    </li>
+                    <li class="projects-item">
+                        <img width="370" height="294" src="/images/project_6.jpg" alt="Inspiration has no Borders">
+                        <h3 class="projects-title">Inspiration has no Borders</h3>
+                        <p class="projects-after-title">Веб-сайт</p>
+                    </li>
+                    <li class="projects-item">
+                        <img width="370" height="294" src="/images/project_7.jpg" alt="Издание Limited Edition">
+                        <h3 class="projects-title">Издание Limited Edition</h3>
+                        <p class="projects-after-title">Дизайн</p>
+                    </li>
+                    <li class="projects-item">
+                        <img width="370" height="294" src="/images/project_8.jpg" alt="Проект LAB">
+                        <h3 class="projects-title">Проект LAB</h3>
+                        <p class="projects-after-title">Маркетинг</p>
+                    </li>
+                    <li class="projects-item">
+                        <img width="370" height="294" src="/images/project_9.jpg" alt="Growing Business">
+                        <h3 class="projects-title">Growing Business</h3>
+                        <p class="projects-after-title">Приложение</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <!--подвал-->
+        <footer class="footer">
+            <a class="link footer-link" href="" lang="en">WebStudio</a>
+            <a class="link footer-link"adress>
+                <ul class="list footer-list">
+                    <li class="footer-item">
+                        <a class="link footer-item-link" href="https://goo.gl/maps/LukTUDe9WhDewyrs6" target="_blank" rel="noopener norefererr">г. Киев,
+                            пр-т Леси Украинки,26</a>
+                    </li>
+                    <li class="foter-item">
+                        <a class="link footer-item-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="foter-item">
+                        <a class="link footer-item-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </footer>
+    </body>
 
 </html>
