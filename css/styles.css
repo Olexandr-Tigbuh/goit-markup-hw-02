@@ -3,10 +3,10 @@ html {
 }
 
 :root {
-  --main-color: #212121;
+  --dark-color: #212121;
   --contacts-header-color: #757575;
-  --vontacts-footer-color: #fff;
-  --web-color: #2196f3;
+  --light-color: #fff;
+  --accent-color: #2196f3;
   --beckground-color: #2f303a;
   --text-color: #000000;
 }
@@ -31,7 +31,12 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-color);
+  color: var(--dark-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
 }
 
 .header-contacts-link-mail,
@@ -43,12 +48,21 @@ body {
   color: var(--contacts-header-color);
 }
 
+.header-contacts-link-mail:hover,
+.header-contacts-link-mail:focus {
+  color: var(--accent-color);
+}
+.headre-contacts-link-tel:hover,
+.headre-contacts-link-tel:focus {
+  color: var(--accent-color);
+}
+
 .header-logo-color-Web {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--web-color);
+  color: var(--accent-color);
 }
 
 .header-logo-color-studio {
@@ -57,4 +71,181 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+/* ----------------main-section-----------------*/
+.main-order-section {
+  background-color: var(--beckground-color);
+}
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--light-color);
+}
+.main-btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--light-color);
+
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/*----------------------HERO-------------------------------------*/
+
+.hero-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dark-color);
+}
+
+.hero-after-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--contacts-header-color);
+}
+
+/*-----------------------WORK--------------------------------*/
+
+.work-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-color);
+}
+
+/*-----------------------about--------------------------------*/
+
+.about {
+  position: absolute;
+  width: 1600px;
+  height: 648px;
+  left: 0px;
+  top: 1449px;
+  background: #f5f4fa;
+}
+
+.about-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-color);
+}
+
+.about-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-color);
+}
+
+.about-after-title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--contacts-header-color);
+}
+
+/*-----------------------------FOOTER-------------------------*/
+
+.footer {
+  background-color: var(--beckground-color);
+}
+
+.footer-logo-color-Web {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.footer-logo-color-studio {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--light-color);
+}
+
+.footer-item-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-item-link-mail,
+.footer-item-link-tel {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*------------------------PORTFOLIO---------------------------*/
+
+.portfolio-current-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background-color: #f5f4fa;
+}
+
+.portfolio-current-button:hover {
+  color: var(--light-color);
+  background-color: var(--accent-color);
+}
+
+/*------------------------PROJECTS------------------------------*/
+
+.projects-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.projects-after-title {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
