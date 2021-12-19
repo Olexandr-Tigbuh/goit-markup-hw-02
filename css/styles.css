@@ -228,7 +228,8 @@ body {
   background-color: #f5f4fa;
 }
 
-.portfolio-current-button:hover {
+.portfolio-current-button:hover,
+.portfolio-current-button:focus {
   color: var(--light-color);
   background-color: var(--accent-color);
 }
