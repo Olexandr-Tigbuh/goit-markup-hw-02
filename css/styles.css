@@ -4,16 +4,20 @@ html {
 
 :root {
   --dark-color: #212121;
-  --contacts-header-color: #757575;
+  --main-text-color: #757575;
   --light-color: #fff;
   --accent-color: #2196f3;
+  --active-accent-color: #188ce8;
   --beckground-color: #2f303a;
   --text-color: #000000;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
 
 .list {
@@ -22,62 +26,47 @@ body {
 
 .link {
   text-decoration: none;
+  color: inherit;
 }
 
 /*-----------------header-----------------------------*/
+.header-list {
+  color: var(--dark-color);
+}
 
 .header-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--dark-color);
 }
 
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.current-link {
   color: var(--accent-color);
 }
 
-.header-contacts-link-mail,
-.headre-contacts-link-tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--contacts-header-color);
-}
-
-.header-contacts-link-mail:hover,
-.header-contacts-link-mail:focus {
-  color: var(--accent-color);
-}
-.headre-contacts-link-tel:hover,
-.headre-contacts-link-tel:focus {
-  color: var(--accent-color);
-}
-
-.header-logo-color-Web {
-  font-weight: bold;
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-
-.header-logo-color-studio {
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+.header-logo {
   color: var(--text-color);
 }
+.footer-logo {
+  color: var(--light-color);
+}
 
-/* ----------------main-section-----------------*/
-.main-order-section {
+/* ----------------HERO ---main-section-----------------*/
+.hero-section {
   background-color: var(--beckground-color);
 }
-.main-title {
+.hiro-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -86,7 +75,7 @@ body {
   text-transform: uppercase;
   color: var(--light-color);
 }
-.main-btn {
+.hiro-btn {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -97,21 +86,20 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--light-color);
-
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
+  cursor: pointer;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
-/*----------------------HERO-------------------------------------*/
+.hiro-btn:active,
+.hiro-btn:hover {
+  background-color: var(--active-accent-color);
+}
 
-.hero-title {
-  font-weight: bold;
+/*----------------------FEATUREs-------------------------------------*/
+
+.features-title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -119,19 +107,9 @@ body {
   color: var(--dark-color);
 }
 
-.hero-after-title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--contacts-header-color);
-}
+/*-----------------------SECTION TITLE--------------------------------*/
 
-/*-----------------------WORK--------------------------------*/
-
-.work-title {
-  font-weight: bold;
+.section-title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -143,15 +121,6 @@ body {
 
 .about {
   background: #f5f4fa;
-}
-
-.about-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--dark-color);
 }
 
 .about-item-title {
@@ -169,7 +138,7 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--contacts-header-color);
+  color: var(--main-text-color);
 }
 
 /*-----------------------------FOOTER-------------------------*/
@@ -178,39 +147,23 @@ body {
   background-color: var(--beckground-color);
 }
 
-.footer-logo-color-Web {
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-.footer-logo-color-studio {
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+.footer-item-link[target='_blank'] {
   color: var(--light-color);
 }
 
+.footer-item-link,
 .footer-item-link {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-item-link-mail,
-.footer-item-link-tel {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+.footer-item-link:hover,
+.footer-item-link:focus {
+  color: var(--accent-color);
 }
 
 /*------------------------PORTFOLIO---------------------------*/
 
-.portfolio-current-button {
+.portfolio-button {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -218,12 +171,14 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
   color: #212121;
-  background-color: #f5f4fa;
+  background-color: var(--light-color);
 }
 
-.portfolio-current-button:hover,
-.portfolio-current-button:focus {
+.portfolio-button:hover,
+.portfolio-button:focus,
+.portfolio-current-button {
   color: var(--light-color);
   background-color: var(--accent-color);
 }
@@ -231,16 +186,15 @@ body {
 /*------------------------PROJECTS------------------------------*/
 
 .projects-title {
-  font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--dark-color);
 }
 
 .projects-after-title {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--main-text-color);
 }
